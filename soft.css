@@ -1,0 +1,186 @@
+
+.fromRightToLeft {
+    -webkit-transform: translateX(100px) !important;
+        -ms-transform: translateX(100px) !important;
+            transform: translateX(100px) !important;
+    opacity: 0 !important;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease;
+}
+
+.fromLeftToRight {
+    -webkit-transform: translateX(-100px) !important;
+        -ms-transform: translateX(-100px) !important;
+            transform: translateX(-100px) !important;
+    opacity: 0 !important;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease;
+}
+.fromLeftToRight.active, .fromRightToLeft.active {
+    -webkit-transform: translateX(0px) !important;
+        -ms-transform: translateX(0px) !important;
+            transform: translateX(0px) !important;
+    opacity: 1 !important;
+}
+.fromDownToTop {
+    -webkit-transform: translateY(100px) !important;
+        -ms-transform: translateY(100px) !important;
+            transform: translateY(100px) !important;
+    opacity: 0 !important;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease;
+}
+.fromTopToDown {
+    -webkit-transform: translateY(-100px) !important;
+        -ms-transform: translateY(-100px) !important;
+            transform: translateY(-100px) !important;
+    opacity: 0 !important;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease;
+}
+.fromTopToDown.active, .fromDownToTop.active {
+    -webkit-transform: translateY(0px) !important;
+        -ms-transform: translateY(0px) !important;
+            transform: translateY(0px) !important;
+    opacity: 1 !important;
+}
+
+.white {
+    color: white;
+}
+.black {
+    color: black;
+}
+.blue {
+    color: var(--primary);
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+}
+.link:hover .blue {
+    color: white;
+}
+.white.hover:hover {
+    color: black;
+
+}
+.black.hover:hover {
+    color: white;
+
+}
+
+
+.ltr.bg-white::before, .rtl.bg-white::before {
+    background: white;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.flex .f1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+.flex .f2 {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+}
+.flex .f3 {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+}
+.flex .f4 {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+}
+
+.flex .f5 {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+}
+.flex .f6 {
+    -webkit-box-flex: 6;
+        -ms-flex: 6;
+            flex: 6;
+}
+.flex .f7 {
+    -webkit-box-flex: 7;
+        -ms-flex: 7;
+            flex: 7;
+}
+.flex .f8 {
+    -webkit-box-flex: 8;
+        -ms-flex: 8;
+            flex: 8;
+}
+.flex .f9 {
+    -webkit-box-flex: 9;
+        -ms-flex: 9;
+            flex: 9;
+}
+
+
+
+.section2 {
+    position: relative;
+}
+.section3 {
+    padding: 150px 10px;
+}
+
+.hasBg1::before {
+    content: '';
+    width: 45%;
+    aspect-ratio: 1.65;
+    background: #141414;
+    position: absolute;
+    border-radius: 12px;
+    z-index: -1;
+    top: 200px;
+    left: 0;
+}
+@media (max-width: 600px) {
+    .hasBg1::before {
+        width: 80%;
+        top: 100%;
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    .flex.mdCol {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .flex.mdColX {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    }
+    
+}
+
+
+
+.asp136 {
+    aspect-ratio: 1.36;
+}
+.asp134 {
+    aspect-ratio: 1.34;
+}
+.asp193 {
+    aspect-ratio: 1.93;
+}
