@@ -4,9 +4,9 @@
         -ms-transform: translateX(100px) !important;
             transform: translateX(100px) !important;
     opacity: 0 !important;
-    -webkit-transition: 1s ease;
-    -o-transition: 1s ease;
-    transition: 1s ease;
+    -webkit-transition: transform 1s ease, opacity 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
 .fromLeftToRight {
@@ -14,9 +14,9 @@
         -ms-transform: translateX(-100px) !important;
             transform: translateX(-100px) !important;
     opacity: 0 !important;
-    -webkit-transition: 1s ease;
-    -o-transition: 1s ease;
-    transition: 1s ease;
+    -webkit-transition: transform 1s ease, opacity 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease;
 }
 .fromLeftToRight.active, .fromRightToLeft.active {
     -webkit-transform: translateX(0px) !important;
@@ -29,18 +29,18 @@
         -ms-transform: translateY(100px) !important;
             transform: translateY(100px) !important;
     opacity: 0 !important;
-    -webkit-transition: 1s ease;
-    -o-transition: 1s ease;
-    transition: 1s ease;
+    -webkit-transition: transform 1s ease, opacity 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease;
 }
 .fromTopToDown {
     -webkit-transform: translateY(-100px) !important;
         -ms-transform: translateY(-100px) !important;
             transform: translateY(-100px) !important;
     opacity: 0 !important;
-    -webkit-transition: 1s ease;
-    -o-transition: 1s ease;
-    transition: 1s ease;
+    -webkit-transition: transform 1s ease, opacity 1s ease;
+    -o-transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease;
 }
 .fromTopToDown.active, .fromDownToTop.active {
     -webkit-transform: translateY(0px) !important;
